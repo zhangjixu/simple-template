@@ -17,7 +17,7 @@ public class MongoTest {
 
     @Test
     public void testMongo() {
-        MongoClientURI mongoClientURI =new MongoClientURI("mongodb://192.168.0.10:27017/?readPreference=SECONDARY");
+        MongoClientURI mongoClientURI = new MongoClientURI("mongodb://192.168.0.10:27017/?readPreference=SECONDARY");
         MongoClient mongoClient = new MongoClient(mongoClientURI);
         MongoDatabase database = mongoClient.getDatabase("test");
         MongoCollection<Document> collection = database.getCollection("test");

@@ -27,7 +27,6 @@ public class OrderController {
     private OrderServiceImpl orderServiceImpl;
 
     @RequestMapping(value = "/queryAllOrder", produces = "application/json; charset=utf-8", method = RequestMethod.GET)
-    @ResponseBody
     public Object queryAllOrder() {
         ResultSet resultSet = new ResultSet();
 
@@ -46,7 +45,6 @@ public class OrderController {
 
 
     @RequestMapping(value = "/addOrder", produces = "application/json; charset=utf-8", method = RequestMethod.POST)
-    @ResponseBody
     public Object addOrder(@RequestBody String params) {
         ResultSet resultSet = new ResultSet();
         try {
@@ -77,7 +75,6 @@ public class OrderController {
     }
 
     @RequestMapping(value = "/updateOrder", produces = "application/json; charset=utf-8", method = RequestMethod.POST)
-    @ResponseBody
     public Object updateOrder(@RequestBody String params) {
         ResultSet resultSet = new ResultSet();
         try {
@@ -109,7 +106,6 @@ public class OrderController {
     }
 
     @RequestMapping(value = "/deleteOrder", produces = "application/json; charset=utf-8", method = RequestMethod.POST)
-    @ResponseBody
     public Object deleteOrder(@RequestBody String params) {
         ResultSet resultSet = new ResultSet();
         try {

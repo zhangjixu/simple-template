@@ -35,7 +35,7 @@ public class MysqlTest {
     @Test
     public void testOrder() {
         String sql = "select * from `order`;";
-        List<Map<String,Object>> list = mysqlJdbcTemplate.queryForList(sql);
+        List<Map<String, Object>> list = mysqlJdbcTemplate.queryForList(sql);
         System.out.println("\n" + list);
     }
 
